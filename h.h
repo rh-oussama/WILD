@@ -21,11 +21,11 @@ int skip_quotes_i(char *str, int *i);
 void create_node(char *str, char type, t_list **head);
 char *handle_other_2(char *str, int *i);
 void handle_other(char *str, int *i, t_list **head);
-t_list* creat_wild(char *str);
-char **lst_file(t_list *head);
+int	creat_wild(char *str, t_list **head);
+char	**lst_file(t_list *head, int d_ir);
 void add_back_list(char ***arr, char *str);
 int check_wild(char *str, t_list *head);
-int compare_strings(char *str, t_list *tmp);
+int	compare_strings(char **str, t_list *tmp);
 
 char	*ft_strjoin(char const *s1, char const *s2);
 void free_array(char **arr);
